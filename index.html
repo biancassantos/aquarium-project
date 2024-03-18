@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triton Aquarium</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mobile.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    
 </head>
 <body>
     <header>
@@ -15,12 +18,24 @@
                 <li><a href="#more-details" class="menu-link">+ details</a></li>
                 <li><a href="#about" class="menu-link">about</a></li>
             </ul>
-            <a href="#"><img src="img/logo.png" alt="Logo"></a>
+            <a href="#"><img src="img/logo.png" alt="Logo" id="logo"></a>
             <ul class="desktop-menu-list">
                 <li><a href="#location" class="menu-link">location</a></li>
                 <li><a href="#contact" class="menu-link">contact</a></li>
             </ul>
+            <button id="mobile-menu-btn"><i class="bi bi-list"></i></button>
         </nav>
+
+        <div class="mobile-menu">
+            <button class="mobile-menu-close-btn"><i class="bi bi-x"></i></button>
+            <ul>
+                <li><a href="#more-details" class="menu-link">+ details</a></li>
+                <li><a href="#about" class="menu-link">about</a></li>
+                <li><a href="#location" class="menu-link">location</a></li>
+                <li><a href="#contact" class="menu-link">contact</a></li>
+            </ul>
+        </div>
+        <div class="overlay"></div>
     </header>
 
     <!-- MAIN -->
@@ -110,19 +125,19 @@
                 <p>tritonaquarium@contact.com</p>
                 <p>000-000-000<br>000-000-000</p>
             </div>
-        </section>
-
-        <!-- FOOTER -->
-
-        <footer>
-            <div class="footer-logo"><img src="img/logo.png" alt="Logo"></div>
-            <p>&copy;2010-2024<br>Triton Aquarium</p>
-            <div class="social-icons">
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-facebook"></i></a>
-            </div>
-        </footer>
+        </section>     
     </main>
+
+    <footer>
+        <div class="footer-logo"><img src="img/logo-footer.png" alt="Logo"></div>
+        <p>&copy;2010-2024, Triton Aquarium</p>
+        <div class="social-icons">
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>

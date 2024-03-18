@@ -26,6 +26,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     padding: 1.5rem 1rem;
     max-width: 1020px;
@@ -33,8 +34,8 @@ nav {
     margin: 0 auto;
 }
 
-nav a img {
-    width: 70px;
+nav a #logo {
+    width: 60px;
 }
 
 .desktop-menu-list {
@@ -44,10 +45,6 @@ nav a img {
     gap: 3rem;
 
     list-style: none;
-}
-
-.menu-logo-img {
-    width: 70px;
 }
 
 .menu-link {
@@ -64,6 +61,74 @@ nav a img {
     color: #0B0B0D;
 }
 
+/* --- MOBILE --- */
+
+#mobile-menu-btn {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    background-color: transparent;
+    display: none;
+}
+
+#mobile-menu-btn i {
+    font-size: 2rem;
+    color: #FFF;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    height: 100vh;
+    width: 0%;
+    padding: 1rem 0rem;
+    background-color: #000;
+    z-index: 10;
+    overflow: hidden;
+    opacity: 1;
+    transition: .3s;
+}
+
+.mobile-menu.open-menu {
+    width: 60%;
+    opacity: 1;
+}
+
+.mobile-menu.open-menu ~ .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 8;
+}
+
+.mobile-menu .mobile-menu-close-btn {
+    width: 50px;
+    height: 50px;
+    margin-left: 1rem;
+    background-color: transparent;
+}
+
+.mobile-menu .mobile-menu-close-btn i {
+    font-size: 2.5rem;
+    color: #FFF;
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 3rem;
+
+    margin-top: 2rem;
+    padding-right: 1.5rem;
+    list-style: none;
+}
+
 /* --- HERO --- */
 
 .hero-container {
@@ -72,7 +137,7 @@ nav a img {
     align-items: center;
 
     height: 100vh;
-    background: url('img/header.jpg') no-repeat;
+    background: url('../img/header.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -92,6 +157,7 @@ nav a img {
     font-weight: 400;
     font-size: 1.5rem;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    margin-top: 2rem;
 }
 
 .hero-text hr {
@@ -107,6 +173,7 @@ nav a img {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     font-weight: 800;
     font-size: 5rem;
+    padding: 0 12px;
     margin-top: 1.5rem;
     margin-bottom: 7rem;
 }
@@ -142,14 +209,21 @@ button {
     padding: 4rem 5rem;
 }
 
-/* --- BLUE H2 --- */
+/* --- H2 --- */
 
-.more-details h2, .location-container h2 {
+h2 {
     font-size: 1.5rem;
     font-weight: 500;
     text-transform: uppercase;
-    color: #3AB4F3;
     margin-bottom: 2rem;
+}
+
+.more-details h2, .location-container h2 {
+    color: #3AB4F3;
+}
+
+.about-container h2, .contact-text h2 {
+    color: #0B0B0D;
 }
 
 /* --- DETAILS --- */
@@ -181,7 +255,7 @@ button {
 .details-container .details-text {
     width: 50%;
     padding: 2rem;
-    margin: -4rem;
+    margin-left: -4rem;
     color: #0B0B0D;
 }
 
@@ -189,13 +263,14 @@ button {
 
 #second-img {
     order: 2;
-    margin: -4rem;
+    margin-left: -4rem;
 }
+
 #second-text{
     background-color: #3AB4F3;
     order: 1;
     z-index: 2;
-    margin: 0;
+    margin-left: 0;
 }
 
 #third-text{background-color: #0376D3;}
@@ -234,15 +309,6 @@ button {
     align-items: end;
     background-color: #F5F5F5;
     text-align: end;
-}
-
-/* --- BLACK H2 ---*/
-
-.about-container h2, .contact-text h2 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem;
 }
 
 .about-container p {
@@ -306,7 +372,7 @@ button {
 
 .contact-img-container {
     width: 45%;
-    background: url('img/contact.jpg') no-repeat;
+    background: url('../img/contact.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -330,10 +396,10 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
 
     color: #F5F5F5;
     padding: 4rem 3rem 2rem 3rem;
-    
 }
 
 .footer-logo img {
@@ -346,6 +412,7 @@ footer {
 footer p {
     font-size: .8rem;
     text-align: center;
+    word-wrap: break-word;
     opacity: 80%;
 }
 
