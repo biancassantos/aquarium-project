@@ -4,7 +4,7 @@
 Olá, esse é um projeto de uma single page para um aquário fictício.
 
 ### Links:
-- <a href="https://biancassantos.github.io/aquarium-project/" target="_blank">Deploy do projeto</a>
+- <a href="https://biancassantos.github.io/aquarium-project/" target="_blank">Página do projeto</a>
 
 </br>
 
