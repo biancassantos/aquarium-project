@@ -1,7 +1,10 @@
 # Aquarium Project
 
 ## 📄 Sobre
-Olá, esse é um projeto de uma single page para um aquário fictício.
+Olá, esse projeto é uma single page para um aquário fictício.
+
+### Objetivos:
+- Praticar HTML e CSS.
 
 ### Links:
 - <a href="https://biancassantos.github.io/aquarium-project/" target="_blank">Página do projeto</a>
@@ -14,7 +17,7 @@ Olá, esse é um projeto de uma single page para um aquário fictício.
 ### Tecnologias:
 - HTML
 - CSS
-- JS
+- JavaScript
 
 </br>
 
